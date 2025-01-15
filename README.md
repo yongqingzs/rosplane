@@ -23,6 +23,30 @@ Note: To successfully build, it may be needed to clone [rosflight_plugins](https
 
 `git submodule update --init --recursive`
 
+## 安装说明(基于ros-noetic)
+
+其他依赖
+
+```bash
+mkdir -p ~/ws/rosflight_ws/src
+cd ~/ws/rosflight_ws/src
+git clone https://github.com/rosflight/rosflight_ros_pkgs.git
+cd rosflight_ros_pkgs
+# 将其分支切换到1.3.1
+cd ../
+git clone https://github.com/rosflight/rosflight_plugins.git
+cd ../
+catkin build
+```
+
+本项目
+
+```bash
+cd ~/ws/rosflight_ws/src
+git clone https://github.com/byu-magicc/rosplane.git
+cd ../
+catkin build
+```
 
 # rosplane
 
